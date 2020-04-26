@@ -1,0 +1,117 @@
+html {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, #3E1305, #8A2811);
+    color: white;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.0rem;
+}
+.tagline {
+    font-weight: 300;
+}
+
+ul  {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+svg {
+    height: 64px;
+    width: 64px;
+    fill: #8A2811;
+}
+
+li {
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+}
+
+.feature-icon {
+    width: min-content;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-descr {
+    width: fit-content;
+    padding-left: 10px;
+}
+
+a   {
+    color: white;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    header {
+        background-image: url("../images/angelina-litvin-32188-unsplash.jpg");
+        background-position: 25% 75%;
+        background-size: cover;
+        padding-top: 100px;
+        color: black;
+    }
+    h1 {
+        font-size: 5.0rem;
+    }
+    .tagline {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    li {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    li {
+        flex-basis: 33%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+footer .container {
+    color: white;
+    background-color: #3E1305;
+    padding: 25px;
+    margin: 25px;
+    width: auto;
+}
+
+p a:visited {
+    color: white;
+}
